@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body {
+  font-family: Dialog-Font;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 15px; 
+  border-top-right-radius: 15px; /* Adjust the border radius */
+  height: 100px; /* Adjust the height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-center{
+	display:flex;
+	align-items:center;
+	margin-left:50px;
+}
+.login-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s; 
+}
+
+.login-button:hover {
+    color: #92a857; 
+}
+
+.login-button img {
+    vertical-align: middle;
+    margin-right: 2px; 
+    background:transparent;
+}
+.navbar h2{
+	color: rgb(140, 98, 51);
+	margin-left: 20px;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  display: block;
+  color: rgb(0, 0, 0); /* Medium blue color */
+  text-align: center;
+  padding: 20px 30px; /* Adjust the padding */
+  text-decoration: none;
+  font-size: 18px; /* Adjust the font size */
+}
+
+.navbar a:hover{
+	color: blue;
+}
+
+.navbar input[type="text"] {
+  padding: 12px; /* Adjust the padding */
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounded corners */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+
+/* Responsive navigation bar */
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: auto; /* Reset height for mobile */
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .navbar a, .navbar input[type="text"] {
+    padding: 10px; /* Reset padding for mobile */
+    font-size: 16px; /* Reset font size for mobile */
+  }
+}
